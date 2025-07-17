@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  # Traefik Reverse Proxy
+  traefik:
+    image: traefik:v3.0
+    container_name: traefik-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "8080:8080"  # Traefik Dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik.yml:/traefik.yml:ro
+    networks:
+      - traefik-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dashboard.rule=Host(`traefik.local`)"
+      - "traefik.http.routers.dashboard.service=api@internal"
+
+  # Fair Harvest Website
+  fairharvest-web:
+    build: .
+    image: fairharvest:latest
+    container_name: fairharvest-web
+    restart: unless-stopped
+    networks:
+      - traefik-network
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.fairharvest.rule=Host(`fairharvest.local`)"
+      - "traefik.http.routers.fairharvest.service=fairharvest"
+      - "traefik.http.services.fairharvest.loadbalancer.server.port=80"
+      - "traefik.docker.network=traefik-network"
+
+networks:
+  traefik-network:
+    name: traefik-network
+    driver: bridge

@@ -1,0 +1,24 @@
+api:
+  dashboard: true
+  insecure: true
+
+entryPoints:
+  web:
+    address: ":80"
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+    network: traefik-network
+
+log:
+  level: INFO
+
+accessLog: {}
+
+# Optional: Enable metrics
+metrics:
+  prometheus:
+    addEntryPointsLabels: true
+    addServicesLabels: true

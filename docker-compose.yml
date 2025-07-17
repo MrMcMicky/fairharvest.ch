@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  fairharvest-web:
+    build: .
+    image: fairharvest:latest
+    container_name: fairharvest-${COMPOSE_PROJECT_NAME:-dev}
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3001}:80"
+    networks:
+      - fairharvest-network
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.fairharvest.rule=Host(`${DOMAIN:-localhost}`)"
+      - "traefik.http.services.fairharvest.loadbalancer.server.port=80"
+
+networks:
+  fairharvest-network:
+    name: fairharvest-network-${COMPOSE_PROJECT_NAME:-dev}
+    driver: bridge
