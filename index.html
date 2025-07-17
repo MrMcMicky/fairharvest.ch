@@ -1,19 +1,380 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Asian Organic Spices Export to Swiss Market | Fair Harvest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/AMq4WLnDEpS82OGa/title-spice-basmati-04-AVLbQ66w7bCrO1o8.png');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-green-800">FAIR HARVEST</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-green-800 hover:text-green-600 font-medium">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-green-800 font-medium">Products</a>
+                    <a href="#" class="text-gray-600 hover:text-green-800 font-medium">Our Story</a>
+                    <a href="#" class="text-gray-600 hover:text-green-800 font-medium">Sustainability</a>
+                    <a href="#" class="text-gray-600 hover:text-green-800 font-medium">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button class="text-gray-600 hover:text-green-800">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-image relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Exquisite Organic Spices, Rice & Coffee</h1>
+                <p class="text-xl md:text-2xl mb-6 max-w-2xl">Sourcing the finest spices, coffee, and rice from India and Sri Lanka to Switzerland.</p>
+                <p class="text-lg mb-8">Supporting local farmers and businesses.</p>
+                <div class="flex items-center mb-6">
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-2">★★★★★</span>
+                </div>
+                <button class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-md font-medium transition duration-300">
+                    Discover Our Products
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Luxury Organic Exporter</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Exquisite Asian organic spices, premium coffee, aromatic basmati rice, and select commodities sourced from India and Sri Lanka.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-green-700 mb-4">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-4">Empowering Local Farmers</h3>
+                    <p class="text-gray-600">
+                        Fostering community growth through fair compensation and creating valuable market opportunities in Switzerland for our partner farmers across various agricultural sectors.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-green-700 mb-4">
+                        <i class="fas fa-leaf text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-4">Promoting Sustainable Development</h3>
+                    <p class="text-gray-600">
+                        Implementing eco-friendly farming methods for diverse crops and supporting local businesses to ensure long-term environmental and economic stability in sourcing regions.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-green-700 mb-4">
+                        <i class="fas fa-award text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-4">Premium Quality and Certifications</h3>
+                    <p class="text-gray-600">
+                        Delivering top-tier organic products while securing prestigious certifications like Bio Suisse, enhancing value and market access for our entire product range.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Products: "Queen's Garden" Series</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Queen's Garden is a regal collection of exquisite organic spices, aromatic rice, and premium coffee, sourced from the lush fields of India and Sri Lanka to elevate your culinary experiences with unparalleled quality and flavor.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-pepper-hot text-6xl text-green-700"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Ceylon Black Peppercorns</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organic black peppercorns from Sri Lanka, bursting with bold, spicy flavor. Our premium peppercorns add depth and heat to any dish.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li><i class="fas fa-map-marker-alt text-green-700 mr-2"></i> Origin: Sri Lanka</li>
+                            <li><i class="fas fa-seedling text-green-700 mr-2"></i> 100% Bio / Organic</li>
+                            <li><i class="fas fa-box-open text-green-700 mr-2"></i> Whole and Ground</li>
+                            <li><i class="fas fa-weight text-green-700 mr-2"></i> Glass jar, 100 g. / 400 g.</li>
+                        </ul>
+                        <button class="w-full bg-green-700 hover:bg-green-800 text-white py-2 rounded-md font-medium transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-tree text-6xl text-green-700"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Ceylon Cinnamon</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organic Ceylon cinnamon from Sri Lanka, known for its sweet, delicate aroma. This "true cinnamon" adds warmth and subtle flavor to both sweet and savory recipes.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li><i class="fas fa-map-marker-alt text-green-700 mr-2"></i> Origin: Sri Lanka</li>
+                            <li><i class="fas fa-seedling text-green-700 mr-2"></i> 100% Bio / Organic</li>
+                            <li><i class="fas fa-box-open text-green-700 mr-2"></i> Sticks and Ground</li>
+                            <li><i class="fas fa-weight text-green-700 mr-2"></i> Glass jar, 100 g. / 400 g.</li>
+                        </ul>
+                        <button class="w-full bg-green-700 hover:bg-green-800 text-white py-2 rounded-md font-medium transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-spa text-6xl text-green-700"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Ceylon Cloves</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organic Ceylon cloves from Sri Lanka, offering intense aromatic power. Our premium cloves bring a robust, slightly sweet flavor to spice blends and baked goods.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li><i class="fas fa-map-marker-alt text-green-700 mr-2"></i> Origin: Sri Lanka</li>
+                            <li><i class="fas fa-seedling text-green-700 mr-2"></i> 100% Bio / Organic</li>
+                            <li><i class="fas fa-box-open text-green-700 mr-2"></i> Grains and Grained</li>
+                            <li><i class="fas fa-weight text-green-700 mr-2"></i> Glass jar, 100 g. / 400 g.</li>
+                        </ul>
+                        <button class="w-full bg-green-700 hover:bg-green-800 text-white py-2 rounded-md font-medium transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-pepper-hot text-6xl text-green-700"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Green Kerala Cardamom</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organic green cardamom from Kerala, India, prized for its complex, aromatic flavor. Our fragrant pods add a unique, slightly sweet taste to both savory dishes and desserts.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li><i class="fas fa-map-marker-alt text-green-700 mr-2"></i> Origin: Kerala, India</li>
+                            <li><i class="fas fa-seedling text-green-700 mr-2"></i> 100% Bio / Organic</li>
+                            <li><i class="fas fa-box-open text-green-700 mr-2"></i> Pods and Grained</li>
+                            <li><i class="fas fa-weight text-green-700 mr-2"></i> Glass jar, 100 g. / 400 g.</li>
+                        </ul>
+                        <button class="w-full bg-green-700 hover:bg-green-800 text-white py-2 rounded-md font-medium transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-utensils text-6xl text-green-700"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Organic Pusa Basmati</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organic Indian Basmati rice, renowned for its long, slender grains and nutty aroma. Our premium rice creates fluffy, fragrant dishes perfect for various cuisines.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li><i class="fas fa-map-marker-alt text-green-700 mr-2"></i> Origin: India</li>
+                            <li><i class="fas fa-seedling text-green-700 mr-2"></i> 100% Bio / Organic</li>
+                            <li><i class="fas fa-box-open text-green-700 mr-2"></i> Whole Grain (brown) & White</li>
+                            <li><i class="fas fa-weight text-green-700 mr-2"></i> Vacuum package: 1 kg. / 5 kg.</li>
+                        </ul>
+                        <button class="w-full bg-green-700 hover:bg-green-800 text-white py-2 rounded-md font-medium transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                <div class="flex justify-center">
+                    <div class="w-16 h-1 bg-green-400"></div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card bg-green-700 p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-lg italic mb-6">
+                    "Fair Harvest has truly transformed the way I experience flavors. Their commitment to quality and sustainability is inspiring."
+                </p>
+                <div class="flex items-center">
+                    <div class="h-12 w-12 rounded-full bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-user text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="font-bold">Brigitte B.</h4>
+                        <p class="text-green-200 text-sm">★★★★★</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Partner with us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Join Fair Harvest in our mission to bring premium organic commodities from Sri Lanka and India to conscious consumers worldwide, while supporting sustainable farming practices and fair trade partnerships.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-md font-medium transition duration-300">
+                        Become a Partner
+                    </button>
+                    <button class="bg-white hover:bg-gray-200 text-green-800 border border-green-800 px-8 py-3 rounded-md font-medium transition duration-300">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FAIR HARVEST</h3>
+                    <p class="text-gray-400">
+                        Exquisite organic spices, premium coffee, and aromatic basmati rice sourced from India and Sri Lanka.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Our Story</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sustainability</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Spices</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Rice</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Coffee</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Queen's Garden Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="text-gray-400">
+                        <i class="fas fa-envelope mr-2"></i> info@fairharvest.ch
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Fair Harvest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle (can be expanded)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if(mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // This would toggle a mobile menu if implemented
+                    console.log('Mobile menu button clicked');
+                    // In a full implementation, you would show/hide the mobile menu here
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=MrMcMicky/fairharvest-ch" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
