@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "playwright": "^1.54.1",
+    "puppeteer": "^24.14.0"
+  }
+}

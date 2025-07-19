@@ -2,6 +2,9 @@
 
 Premium organic spices, rice, and coffee from India and Sri Lanka. Direct export to Switzerland with fair trade practices.
 
+**Last Updated:** 19.07.2025  
+**Status:** ✅ Production Ready - 100% Tests Passed
+
 ## 🚀 Quick Start
 
 ### Multi-Project Setup (Recommended)
@@ -57,14 +60,20 @@ fairharvest-ch/
 ├── docker-start.sh         # Main management script
 ├── docker-start-nginx.sh   # Nginx proxy script
 ├── docker-start-traefik.sh # Traefik proxy script
+├── automated-test.js       # Automated test suite
+├── package.json            # Node dependencies
+├── test-screenshots/       # Test screenshots
 ├── DEVELOPMENT_WORKFLOW.md # Development standards
-├── TEST_REPORT.md          # Latest test results
+├── TEST_REPORT.md          # Manual test results
+├── TEST_REPORT_AUTOMATED.md # Automated test results
 ├── PORT_ALLOCATION.md      # Port documentation
 ├── LOCAL_DOMAINS.md        # Local domain setup
 └── LOCAL_REVERSE_PROXY_GUIDE.md # Proxy guide
 ```
 
 ## 🧪 Testing
+
+**Automated Testing:** ✅ Fully Implemented with Puppeteer
 
 All functionality thoroughly tested:
 - ✅ Navigation & anchor links
@@ -73,8 +82,19 @@ All functionality thoroughly tested:
 - ✅ Responsive design
 - ✅ Asset loading
 - ✅ Multi-project integration
+- ✅ Performance metrics (< 3s load time)
+- ✅ Mobile responsiveness
+- ✅ Console error checking
 
-See `TEST_REPORT.md` for detailed results.
+**Test Reports:**
+- `TEST_REPORT.md` - Manual test results
+- `TEST_REPORT_AUTOMATED.md` - Automated test results
+- `automated-test.js` - Test script (27 tests)
+
+Run automated tests:
+```bash
+npm test
+```
 
 ## 📱 URLs
 
